@@ -100,9 +100,9 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #a2a2a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 14pt;
 		font-weight: 400;
-		line-height: 1.75em;
+		line-height: 1.55em;
 	}
 
 	a {
@@ -2049,7 +2049,6 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
