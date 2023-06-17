@@ -1,7 +1,6 @@
 site_name: My Docs
 
 nav:
-  - Home: 'index.md'
+  - Home: 'docs/index.md'
 
-theme:
-  name: material 
+theme: readthedocs
