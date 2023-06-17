@@ -121,7 +121,7 @@ def get_nnl(y_true, y_pred):
     y_log_fact = np.array([np.math.factorial(val) for val in y_true]) # (1)
 
     # Get log likelihood
-    nnl = -np.sum(
+    nnl = np.sum(
         y_pred - y_true*np.log(y_pred) + y_log_fact  # (2)
     )
 
@@ -194,7 +194,7 @@ First, create a function to split input & output
 ```{ .python .annotate linenums='1'}
 # Split data
 def split_input_output(data, input_cols, target_col):
-    """Split intpu-output"""
+    """Split input-output"""
     X = data[input_cols]
     y = data[target_col]
 

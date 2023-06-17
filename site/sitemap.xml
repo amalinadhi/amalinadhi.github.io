@@ -6,7 +6,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://amalinadhi.github.io/data_engineering/</loc>
+         <lastmod>2023-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://amalinadhi.github.io/data_engineering/scraping_job_glints/</loc>
+         <lastmod>2023-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://amalinadhi.github.io/data_sciences/</loc>
+         <lastmod>2023-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://amalinadhi.github.io/data_sciences/poisson_regression/</loc>
          <lastmod>2023-06-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
