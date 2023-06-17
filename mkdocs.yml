@@ -1,3 +1,7 @@
 site_name: My Docs
+
 nav:
   - Home: 'README.md'
+
+theme:
+  name: material 
