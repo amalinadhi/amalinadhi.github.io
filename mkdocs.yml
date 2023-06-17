@@ -1,10 +1,7 @@
 # Project information
-site_name: Cahya Amalinadhi blog
+site_name: Cahya Amalinadhi's blog
 site_url: https://amalinadhi.github.io/
 site_author: Cahya Amalinadhi
-site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
 repo_url: https://github.com/amalinadhi/
 
 
@@ -15,15 +12,29 @@ copyright: Copyright &copy; 2023 Cahya Amalinadhi
 theme: 
   name: material
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.path
-    - navigation.indexes
-    - toc.integrate
-    - navigation.footer
-    - content.code.copy
-    - content.code.select
+    - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
     scheme: default
     primary: black
@@ -38,7 +49,6 @@ theme:
 
 # Markdown extensions
 markdown_extensions:
-  # Python Markdown
   - abbr
   - admonition
   - attr_list
@@ -47,8 +57,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -56,26 +64,50 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+      emoji_index: !!python/name:materialx.emoji.twemoji
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra javascript
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/amalinadhi/
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:amalinadhi.cahya@gmail.com
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
 
 # Plugins
 plugins:
@@ -85,4 +117,5 @@ plugins:
 # Page tree
 nav:
   - Home: index.md
-  - Data Engineering: data_engineering/scraping_job_glints.md
+  - Data Sciences: data_sciences/index.md
+  #- Data Engineering: data_engineering/index.md

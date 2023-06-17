@@ -1,9 +1,7 @@
 # Scraping Job at Glints using Graphql
 
+
 ## How to scrap?
-``` { .yaml .annotate }
-# Code block content
-```
 
 ``` py hl_lines="2 3"
 def bubble_sort(items):

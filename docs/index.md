@@ -1,9 +1,9 @@
-# Cahya Amalinadhi blog
+# Cahya Amalinadhi's blog
 
 ---
 
-## Data Engineering
+## Data Sciences
 
-> Some blogs about data engineering.
+> Some blogs about data sciences.
 
-* [Scraping Job at Glints with Graphql](docs/data_engineering/scraping_job_glints.md)
+* [Modeling Count Data with Poisson Regression](/data_sciences/poisson_regression)
