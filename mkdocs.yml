@@ -1,11 +1,13 @@
 # Project information
-site_name: Material for MKDocs
+site_name: Cahya Amalinadhi blog
 site_url: https://amalinadhi.github.io/
 site_author: Cahya Amalinadhi
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
- 
+repo_url: https://github.com/amalinadhi/
+
+
 # Copyright
 copyright: Copyright &copy; 2023 Cahya Amalinadhi
 
@@ -13,26 +15,67 @@ copyright: Copyright &copy; 2023 Cahya Amalinadhi
 theme: 
   name: material
   features:
-    - announce.dismiss
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.indexes
+    - toc.integrate
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: black
+    accent: indigo
   font:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
     logo: logo
+    repo: fontawesome/brands/github
+
+# Markdown extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 # Plugins
 plugins:
@@ -41,5 +84,5 @@ plugins:
 
 # Page tree
 nav:
-  - Home: new.md
-  - Index: index.md
+  - Home: index.md
+  - Data Engineering: data_engineering/scraping_job_glints.md
