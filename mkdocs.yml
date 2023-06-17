@@ -1,7 +1,7 @@
 site_name: My Docs
 
 nav:
-  - Home: 'README.md'
+  - Home: 'index.md'
 
 theme:
   name: material 
