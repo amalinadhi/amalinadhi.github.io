@@ -1,6 +1,40 @@
-site_name: My Docs
+# Project information
+site_name: Material for MKDocs
 
+# Copyright
+copyright: Copyright &copy; 2023 Cahya Amalinadhi
+
+# Configuration
+theme: 
+  name: material
+  features:
+    - announce.dismiss
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+# Page tree
 nav:
-  - Home: 'docs/index.md'
-
-theme: readthedocs
+  - Home: new.md
+  - Index: index.md
