@@ -118,11 +118,11 @@ We calculate the model performance by the negative log likelihood
 def get_nnl(y_true, y_pred):
     '''Get the log likelihood'''
     # Get y!
-    y_log_fact = np.array([np.math.factorial(val) for val in y_true]) # (1)
+    y_fact = np.array([np.math.factorial(val) for val in y_true]) # (1)
 
     # Get log likelihood
     nnl = np.sum(
-        y_pred - y_true*np.log(y_pred) + y_log_fact  # (2)
+        y_pred - y_true*np.log(y_pred) + np.log(y_fact)  # (2)
     )
 
     return nnl
