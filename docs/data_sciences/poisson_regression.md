@@ -355,7 +355,7 @@ for i in range(max_iter):
     y_pred = predict(A, beta) # (3)
 
     # Find likeliheood
-    nll = get_log_likelihood(y, y_pred) # (4)
+    nll = get_nll(y, y_pred) # (4)
 
     # Find grad
     grads = np.dot(A.T, (y_pred - y)) # (5)
