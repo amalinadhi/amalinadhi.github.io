@@ -117,5 +117,5 @@ plugins:
 # Page tree
 nav:
   - Home: index.md
-  - Data Sciences: data_sciences/index.md
+  - Data Science: data_science/index.md
   #- Data Engineering: data_engineering/index.md

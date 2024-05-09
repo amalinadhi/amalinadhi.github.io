@@ -2,8 +2,8 @@
 
 ---
 
-## Data Sciences
+## Data Science
 
-> Some blogs about data sciences.
+> Experimenting with Data.
 
-* [Modeling Count Data with Poisson Regression](/data_sciences/poisson_regression)
+* [Modeling Count Data with Poisson Regression](/data_science/poisson_regression)
