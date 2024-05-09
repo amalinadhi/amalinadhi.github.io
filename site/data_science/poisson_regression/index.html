@@ -10,7 +10,7 @@
         <meta name="author" content="Cahya Amalinadhi">
       
       
-        <link rel="canonical" href="https://amalinadhi.github.io/data_sciences/poisson_regression/">
+        <link rel="canonical" href="https://amalinadhi.github.io/data_science/poisson_regression/">
       
       
       
@@ -203,7 +203,7 @@
 
   <li class="md-tabs__item">
     <a href="../" class="md-tabs__link">
-      Data Sciences
+      Data Science
     </a>
   </li>
 
@@ -281,7 +281,7 @@
   
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
-        Data Sciences
+        Data Science
       </a>
     </li>
   
@@ -807,7 +807,7 @@ Recall the Equation (1)</p>
 </span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7"></a>    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span> <span class="c1"># (3)</span>
 </span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8"></a>
 </span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9"></a>    <span class="c1"># Find likeliheood</span>
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10"></a>    <span class="n">nll</span> <span class="o">=</span> <span class="n">get_log_likelihood</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> <span class="c1"># (4)</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10"></a>    <span class="n">nll</span> <span class="o">=</span> <span class="n">get_nll</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span> <span class="c1"># (4)</span>
 </span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11"></a>
 </span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12"></a>    <span class="c1"># Find grad</span>
 </span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13"></a>    <span class="n">grads</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="p">(</span><span class="n">y_pred</span> <span class="o">-</span> <span class="n">y</span><span class="p">))</span> <span class="c1"># (5)</span>
